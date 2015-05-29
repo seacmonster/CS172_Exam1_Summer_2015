@@ -1,0 +1,16 @@
+﻿Build started 5/29/2015 12:06:15 PM.
+     1>Project "C:\Users\Chronos\Documents\GitHub\CS-172-Homework\CS 172 Exam 1 (Summer 2015)\CS 172 Exam 1 (Summer 2015)\CS 172 Exam 1 (Summer 2015).vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp Theater.cpp
+         Theater.cpp
+         Generating Code...
+     1>c:\users\chronos\documents\github\cs-172-homework\cs 172 exam 1 (summer 2015)\cs 172 exam 1 (summer 2015)\theater.cpp(28): error C4716: 'Theater::GetMovieForHour' : must return a value
+     1>c:\users\chronos\documents\github\cs-172-homework\cs 172 exam 1 (summer 2015)\cs 172 exam 1 (summer 2015)\theater.cpp(33): error C4716: 'Theater::GetShowTimeForGenre' : must return a value
+         Compiling...
+         Main.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\Chronos\Documents\GitHub\CS-172-Homework\CS 172 Exam 1 (Summer 2015)\CS 172 Exam 1 (Summer 2015)\CS 172 Exam 1 (Summer 2015).vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.95
