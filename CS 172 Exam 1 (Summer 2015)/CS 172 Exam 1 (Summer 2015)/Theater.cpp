@@ -14,9 +14,10 @@ Theater::Theater(string Name, string Phone) //The name for this theater
 	Phone = phone;
 }
 
-void Theater::AddMovie(Movie& Movie) //Add a movie at a specific time
+void Theater::AddMovie(Movie &movie) //Add a movie at a specific time
 {
-	movieListing[MovieNumber] = moviename;
+	MovieNumber = 0;
+	movieListing[MovieNumber] = movie;
 
 	MovieNumber += 1;
 }
@@ -26,9 +27,9 @@ string Theater::GetMovieForHour(int Hour) //Return the movie shown at or after t
 	{
 		for (int i = 0; i < MovieNumber; i++){
 
-			if (moviename[i].getShowtime() == hour) {
+			if (movieListing[i].GetShowtime() == hour) {
 
-				return movieList[i].getTitle();
+				return movieListing[i].GetTitle();
 			}
 		}
 		return "";
@@ -39,9 +40,9 @@ int Theater::GetShowTimeForGenre(string Genre) //When will the movie of the give
 {
 	for (int i = 0; i < MovieNumber; i++){
 
-		if (moviename[i].getGenre() == Genre) {
+		if (movieListing[i].GetGenre() == Genre) {
 
-			return movieListing[i].getShowtime();
+			return movieListing[i].GetShowtime();
 		}
 	}
 	return -1;

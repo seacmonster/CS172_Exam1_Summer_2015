@@ -6,6 +6,7 @@
 #include "Theater.h" 
 using namespace std;
 
+//Is there an error in this code. I feel like my code is correct but I keep getting two errors??
 int main() {
 
 	const int MOVIECOUNT = 11;

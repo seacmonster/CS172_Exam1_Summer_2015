@@ -14,7 +14,7 @@ public:
 
 	Theater(string Name, string Phone); //The name for this theater
 
-	void AddMovie(Movie& Movie); //Add a movie at a specific time
+	void AddMovie(Movie &movie); //Add a movie at a specific time
 
 	string GetMovieForHour(int Hour); //Return the movie shown at or after the given hour
 
@@ -27,8 +27,7 @@ public:
 private:
 	string name;
 	string phone;
-	string moviename;
-	string movie;
+	string genre;
 	int hour;
 	int MovieNumber;
 	int PopcornPrice;
