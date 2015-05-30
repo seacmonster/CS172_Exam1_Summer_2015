@@ -1,4 +1,5 @@
 //Colin Bondy
+//I affirm that all code given below was written solely by me, Colin Bondy, and that any help I received adhered to the rules stated for this exam.
 
 #include<string>
 #include"Movie.h"
@@ -27,9 +28,12 @@ private:
 	string name;
 	string phone;
 	string moviename;
+	string movie;
+	int hour;
+	int MovieNumber;
 	int PopcornPrice;
 	int CokePrice;
-	Movie movies[11];
+	Movie movieListing[11];
 	
 
 };

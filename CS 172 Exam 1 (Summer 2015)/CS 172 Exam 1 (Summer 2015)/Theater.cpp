@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <string>
-#include "Movie.h"
 #include "Theater.h"
 
 using namespace std;
@@ -17,20 +16,36 @@ Theater::Theater(string Name, string Phone) //The name for this theater
 
 void Theater::AddMovie(Movie& Movie) //Add a movie at a specific time
 {
-	int i = 0; // I can't figure out how to pass movies in here individually and then return them indiviaully in the following functions when called
-	Movie = movies[i];
-	i++;
+	movieListing[MovieNumber] = moviename;
+
+	MovieNumber += 1;
 }
 
 string Theater::GetMovieForHour(int Hour) //Return the movie shown at or after the given hour
 {
-	 movies[Hour] = moviename;
-	 return moviename;
+	{
+		for (int i = 0; i < MovieNumber; i++){
+
+			if (moviename[i].getShowtime() == hour) {
+
+				return movieList[i].getTitle();
+			}
+		}
+		return "";
+	}
 }
 
 int Theater::GetShowTimeForGenre(string Genre) //When will the movie of the given genre be shown? // Return -1 if none exist
 {
-	
+	for (int i = 0; i < MovieNumber; i++){
+
+		if (moviename[i].getGenre() == Genre) {
+
+			return movieListing[i].getShowtime();
+		}
+	}
+	return -1;
+
 }
 
 int Theater::GetPopcornPrice() //Cost in dollars for popcorn 

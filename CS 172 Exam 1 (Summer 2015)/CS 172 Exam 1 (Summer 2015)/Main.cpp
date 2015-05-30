@@ -1,6 +1,5 @@
 //Colin Bondy
 //CS 172 Exam 1 (Summer 2015)
-//I affirm that all code given below was written solely by me, Colin Bondy, and that any help I received adhered to the rules stated for this exam.
 
 #include <iostream>
 #include "Movie.h" 
